@@ -80,11 +80,11 @@ header {
   position: relative;
 }
 
-.background:before {
+.background::before {
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  content: '';
+  content: "";
   opacity: 0.1;
   position: absolute;
   display: block;
