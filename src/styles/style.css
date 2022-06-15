@@ -30,6 +30,10 @@ h3 {
 
 h1 {
   font-size: 72px;
+  margin: 0 0 200px;
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
 }
 
 h2 {
@@ -40,14 +44,78 @@ h3 {
   font-size: 34px;
 }
 
-section {
+header {
+  position: relative;
+  background-color: var(--light);
+}
+
+.content {
   margin: 0 auto;
   max-width: 1110px;
   padding: 100px 0;
+  position: relative;
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.content-one-col {
+  column-span: all;
+}
+
+.content-break-before {
+  break-before: column;
+}
+
+.content p {
+  margin-top: 0;
 }
 
 .hello {
   display: block;
 
   color: #fff;
+}
+
+.background {
+  position: relative;
+}
+
+.background:before {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  opacity: 0.1;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.header-image {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+.btn-orange {
+  background: var(--main);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.orange {
+  color: var(--main);
+}
+
+.top-4 {
+  margin-top: 40px;
 }
